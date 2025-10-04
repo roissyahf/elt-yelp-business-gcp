@@ -1,0 +1,53 @@
+# --------- IGNORE ALL PDF -----------
+/pdf
+
+
+# --------- IGNORE ALL JSON FILES -----------
+/yelp_dataset/*.json
+/yelp_review_splitted_10_random/uploaded/*.json
+/yelp_review_splitted_10_random/*.json
+/yelp_sample_business/*.json
+/yelp_sample_review/*.json
+
+
+# --------- IGNORE UNUSED FILES -----------
+function_collections/*.py
+batch_request.json
+yelp_business_schema.json
+
+downstream_task/downstream-task-t1.ipynb
+downstream_task/downstream-task-t2.ipynb
+
+
+# --------- IGNORE CREDENTIAL FILES -----------
+application_default_credentials.json
+
+
+# --------- Python cache & build files ---------
+__pycache__/
+*.ipynb_checkpoints
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+
+# --------- Virtual environments ---------
+.venv/
+venv/
+env/
+ENV/
+
+
+# --------- Environment & credentials -------
+.env
+*.env
+
+
+# ---------- Logs -----------------
+*.log
+logs/
+*.out
+*.err
