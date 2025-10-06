@@ -19,7 +19,20 @@ This project is **inspired by** end-to-end analytics case studies built by [Anki
 
 ## **Project Structure**
 
-wip
+```bash
+├───cloud_function
+│       cloud_function_1_UPD.py
+│       cloud_function_2_UPD.py
+│       requirements.txt
+│
+├───downstream_task
+│       downstream-task-t3.ipynb
+│
+├───prepare_files_to_be_uploaded
+│       get_random_review.py
+│       get_respective_business_info.py
+│       split_large_json_review.py
+```
 
 ---
 
@@ -27,7 +40,7 @@ wip
 
 This project implements a fully automated, event-driven Extract, Load, and Transform (ELT) pipeline on Google Cloud Platform (GCP) to ingest raw Yelp review data from Cloud Storage into a structured BigQuery analytics table.
 
-This pipeline is triggered every time a new JSON file is uploaded to the designated input Cloud Storage bucket. It is designed to handle out-of-order data arrival and prevent duplicate records in the final analytics table.
+The pipeline is triggered every time a new JSON file is uploaded to the designated input Cloud Storage bucket. It is designed to handle out-of-order data arrival and prevent duplicate records in the final analytics table.
 
 ### **Architecture**
 
@@ -52,7 +65,7 @@ This function handles the Extract and Load phases.
 | :--- | :--- |
 | **Trigger** | GCS Event (`google.cloud.storage.object.v1.finalized`) on the input bucket. |
 | **Action** | Loads the newly uploaded JSON file directly into the staging BigQuery table. |
-| **Behavior** | Uses `WRITE_APPEND` to load all data into the staging table. It successfully loads only the triggering file, despite previous test complexities. |
+| **Behavior** | Uses `WRITE_APPEND` to load all data into the staging table. |
 | **Next Step** | Securely triggers Cloud Function 2 (`transform_data`) via an authenticated HTTP request upon successful load. |
 
 ### 3. BigQuery Staging Table: `yelp_landing.reviews_raw`
@@ -69,8 +82,8 @@ This function handles the core business logic, transformation, and incremental l
 | Feature | Details |
 | :--- | :--- |
 | **Trigger** | HTTP request from Cloud Function 1. |
-| **Action** | Executes a BigQuery **`MERGE ... USING`** query. |
-| **Deduplication Logic** | Uses the **Unique Key Check** (`WHEN  NOT MATCHED THEN`) to ensure records are only inserted once. |
+| **Action** | Executes a BigQuery **`MERGE`** statement for atomic, race-condition-safe operations. |
+| **Deduplication Logic** | Uses the **`MERGE ... USING ... ON target.review_id = source.review_id WHEN NOT MATCHED THEN`** to ensure records are only inserted once, even with concurrent executions |
 
 ### 5. BigQuery Analytics Table: `yelp_analytics.reviews` (The Target)
 
@@ -127,9 +140,14 @@ After completing the ELT pipeline with Cloud Function, I proceeded with downstre
 **Dashboard Snapshot**
 <img width="943" height="423" alt="Image" src="https://github.com/user-attachments/assets/b2817195-ab03-4ed7-ac9c-943cdc169f31" />
 
-**Key Insights (Sample Demo)**
+**Key Insights**
 - Product Variety & Selection dominates in review volume and is largely positive.
 - Clothing & Apparel Experience shows mixed ratings, with a notable skew toward 1-star reviews.
+- Hair & Beauty Services performs well overall, with a strong concentration in 5-star reviews and minimal negative feedback. Suggesting this segment delivers reliably high customer experiences.
+
+**Recommendation**
+- Invest in Product & Store Quality Controls: Despite having the highest review volume, “Product Variety & Selection” also includes noticeable negative sentiment. Focus on stock availability, layout, and product curation.
+- Enhance Mall & Food Court Offerings: The mixed and lower review distribution here suggests potential improvement opportunities in food quality, cleanliness, or seating comfort to boost overall retail experience.
 
 ---
 
@@ -141,12 +159,16 @@ wip
 
 ## **Reference**
 
-wip
+- [Extract Load Transform Concept](https://www.getdbt.com/blog/extract-load-transform) 
+- [Medallion Lakehouse Architecture](https://learn.microsoft.com/en-us/azure/databricks/lakehouse/medallion )
+- [ETL Cloud Function Tutorial](https://github.com/RekhuGopal/PythonHacks/tree/main/GCP_ETL_CloudFunction_BigQuery) 
+- [Bigquery Batch Prediction Job Tutorial](https://cloud.google.com/vertex-ai/docs/samples/aiplatform-create-batch-prediction-job-bigquery-sample#aiplatform_create_batch_prediction_job_bigquery_sample-python )
+- [Vertex AI Custom Code Training Tutorial](https://codelabs.developers.google.com/codelabs/vertex-ai-custom-code-training#3)
 
 ---
 
 ## **Author**
 
-Developed by **Roissyah Fernanda**. This project benefited from the AI chatbots for code refinement, debugging hard problems & help with documentation.
+Developed by **Roissyah Fernanda**. This project benefited from the AI chatbots for code refinement, debugging hard problems, and also help with documentation.
 
 Your input is valued! If you spot a bug or want to suggest an improvement, please submit a pull request. Let's collaborate to make this end-to-end Data Analysis project even better
