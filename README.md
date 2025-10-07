@@ -13,6 +13,7 @@ This project is **inspired by** end-to-end analytics case studies built by [Anki
 ## **Technology Stack**
 - Cloud Functions
 - BigQuery
+- Cloud Storage
 - Vertex AI Workbench
 - Power BI (planned Looker Studio, but limited by trial access). 
 ---
@@ -21,17 +22,18 @@ This project is **inspired by** end-to-end analytics case studies built by [Anki
 
 ```bash
 ├───cloud_function
-│       cloud_function_1_UPD.py
-│       cloud_function_2_UPD.py
-│       requirements.txt
+│       cloud_function_1_UPD.py     # Cloud Function 1: Handle the extract, load
+│       cloud_function_2_UPD.py     # Cloud Function 2: Handle the transformation
+│       requirements.txt            # Requirements for both Cloud Function
 │
 ├───downstream_task
-│       downstream-task-t3.ipynb
+│       downstream-task-t3.ipynb    # Notebook for downstream task
 │
-├───prepare_files_to_be_uploaded
-│       get_random_review.py
-│       get_respective_business_info.py
-│       split_large_json_review.py
+├───prepare_and_process
+│       get_random_review.py        # Script to get random review from splitted JSON reviews
+│       split_large_json_review.py  # Script to split large JSON reviews
+|       general_business_category_mapping.ipynb   # Notebook for mapping general business category
+
 ```
 
 ---
@@ -42,13 +44,14 @@ This project implements a fully automated, event-driven Extract, Load, and Trans
 
 The pipeline is triggered every time a new JSON file is uploaded to the designated input Cloud Storage bucket. It is designed to handle out-of-order data arrival and prevent duplicate records in the final analytics table.
 
-### **Architecture**
+### **The Project Workflow**
 
 (flowchart is in progress)
 
-Cloud Storage >> Cloud Function 1 (Load) >> BigQuery Staging >> Cloud Function 2 (Transform) >> BigQuery Analytics (Target)
 
 ### **Pipeline Components**
+
+<img width="952" height="321" alt="Image" src="https://github.com/user-attachments/assets/0ff49273-2c90-491a-82af-6b415a3c3d01" />
 
 ### 1. Cloud Storage (GCS)
 
@@ -95,7 +98,14 @@ This function handles the core business logic, transformation, and incremental l
 
 ### **Data Schema**
 
-(data schema file is in progress)
+**`yelp_landing`**
+<img width="776" height="372" alt="Image" src="https://github.com/user-attachments/assets/3107dd52-c7bf-4010-aede-0218a8071204" />
+
+**`yelp_analytics`**
+<img width="776" height="342" alt="Image" src="https://github.com/user-attachments/assets/025004d6-232a-4f5a-bed6-6e3103af81d4" />
+
+**`yelp_golden`**
+<img width="862" height="512" alt="Image" src="https://github.com/user-attachments/assets/b4e52b9b-7faa-4753-b98b-ac18525978a8" />
 
 ---
 

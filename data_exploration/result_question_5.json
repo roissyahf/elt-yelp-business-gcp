@@ -1,0 +1,331 @@
+[{
+  "state": "AB",
+  "rank_num": "1",
+  "business_id": "jEvoDXtF3xMJsiPPbqGSmw",
+  "general_category": "Restaurants \u0026 Food",
+  "num_reviews": "80"
+}, {
+  "state": "AB",
+  "rank_num": "2",
+  "business_id": "F0XiRcSbcLF4GwA2A2TDKQ",
+  "general_category": "Nightlife \u0026 Entertainment",
+  "num_reviews": "51"
+}, {
+  "state": "AB",
+  "rank_num": "3",
+  "business_id": "Eq5w0ZAW0PV30nNkJxJY_A",
+  "general_category": "Restaurants \u0026 Food",
+  "num_reviews": "45"
+}, {
+  "state": "AZ",
+  "rank_num": "1",
+  "business_id": "UCMSWPqzXjd7QHq7v8PJjQ",
+  "general_category": "Restaurants \u0026 Food",
+  "num_reviews": "218"
+}, {
+  "state": "AZ",
+  "rank_num": "2",
+  "business_id": "WSx9-iYYyST_umny9sJBFg",
+  "general_category": "Home Services \u0026 Real Estate",
+  "num_reviews": "201"
+}, {
+  "state": "AZ",
+  "rank_num": "3",
+  "business_id": "zwrgCMuZyFX46mL3piDyjg",
+  "general_category": "Restaurants \u0026 Food",
+  "num_reviews": "192"
+}, {
+  "state": "CA",
+  "rank_num": "1",
+  "business_id": "8A5LSwsKK5vXDH1M3_Tf1w",
+  "general_category": "Home Services \u0026 Real Estate",
+  "num_reviews": "315"
+}, {
+  "state": "CA",
+  "rank_num": "2",
+  "business_id": "edJoBsse6nsF0BYh6pATAg",
+  "general_category": "Home Services \u0026 Real Estate",
+  "num_reviews": "309"
+}, {
+  "state": "CA",
+  "rank_num": "3",
+  "business_id": "U3grYFIeu6RgAAQgdriHww",
+  "general_category": "Nightlife \u0026 Entertainment",
+  "num_reviews": "304"
+}, {
+  "state": "CO",
+  "rank_num": "1",
+  "business_id": "C_k12ohqzRrF0P9aJVwocQ",
+  "general_category": "Professional \u0026 Local Services",
+  "num_reviews": "1"
+}, {
+  "state": "CO",
+  "rank_num": "2",
+  "business_id": "1H9WYGFJ4AFwXq7WCOOMtg",
+  "general_category": "Restaurants \u0026 Food",
+  "num_reviews": "1"
+}, {
+  "state": "CO",
+  "rank_num": "3",
+  "business_id": "g0mm9BzcG7AdpTbJf2gzgA",
+  "general_category": "Shopping \u0026 Retail",
+  "num_reviews": "1"
+}, {
+  "state": "DE",
+  "rank_num": "1",
+  "business_id": "S6ACtNZ5wY0EjmK07iWUgg",
+  "general_category": "Restaurants \u0026 Food",
+  "num_reviews": "94"
+}, {
+  "state": "DE",
+  "rank_num": "2",
+  "business_id": "j7LZM6rf4Bf33exo6XXKGA",
+  "general_category": "Restaurants \u0026 Food",
+  "num_reviews": "62"
+}, {
+  "state": "DE",
+  "rank_num": "3",
+  "business_id": "CFBnmxqAm4vX6v4BFye70w",
+  "general_category": "Restaurants \u0026 Food",
+  "num_reviews": "58"
+}, {
+  "state": "FL",
+  "rank_num": "1",
+  "business_id": "3YqUe2FTCQr0pPVK8oCv6Q",
+  "general_category": "Restaurants \u0026 Food",
+  "num_reviews": "520"
+}, {
+  "state": "FL",
+  "rank_num": "2",
+  "business_id": "CgiwCrXs3Ggu9eKFPIgjtA",
+  "general_category": "Restaurants \u0026 Food",
+  "num_reviews": "249"
+}, {
+  "state": "FL",
+  "rank_num": "3",
+  "business_id": "_78Lam9Jd0W6ZmnHTvdjMg",
+  "general_category": "Restaurants \u0026 Food",
+  "num_reviews": "231"
+}, {
+  "state": "HI",
+  "rank_num": "1",
+  "business_id": "bw90rjFL02A_8rVE34m5Lg",
+  "general_category": "Home Services \u0026 Real Estate",
+  "num_reviews": "2"
+}, {
+  "state": "HI",
+  "rank_num": "2",
+  "business_id": "_sE5Fw4Ui2XbvMLPUL9Bcw",
+  "general_category": "Professional \u0026 Local Services",
+  "num_reviews": "1"
+}, {
+  "state": "ID",
+  "rank_num": "1",
+  "business_id": "3SM8CZuY5MiAruczCm556w",
+  "general_category": "Nightlife \u0026 Entertainment",
+  "num_reviews": "231"
+}, {
+  "state": "ID",
+  "rank_num": "2",
+  "business_id": "jbJTF1zVmZsk4hea8hoeVA",
+  "general_category": "Restaurants \u0026 Food",
+  "num_reviews": "229"
+}, {
+  "state": "ID",
+  "rank_num": "3",
+  "business_id": "snTpO07JxjGhwJbE4RDFIA",
+  "general_category": "Home Services \u0026 Real Estate",
+  "num_reviews": "140"
+}, {
+  "state": "IL",
+  "rank_num": "1",
+  "business_id": "Kfaq9cuyeXHkzWwL39jUWw",
+  "general_category": "Restaurants \u0026 Food",
+  "num_reviews": "119"
+}, {
+  "state": "IL",
+  "rank_num": "2",
+  "business_id": "wbLXXbI-T6Av71i9AoiZRQ",
+  "general_category": "Restaurants \u0026 Food",
+  "num_reviews": "87"
+}, {
+  "state": "IL",
+  "rank_num": "3",
+  "business_id": "xP5o6PVU3tWOixLJTIdVVA",
+  "general_category": "Restaurants \u0026 Food",
+  "num_reviews": "84"
+}, {
+  "state": "IN",
+  "rank_num": "1",
+  "business_id": "UFCN0bYdHroPKu6KV5CJqg",
+  "general_category": "Professional \u0026 Local Services",
+  "num_reviews": "349"
+}, {
+  "state": "IN",
+  "rank_num": "2",
+  "business_id": "S_jfDqc2TUhkraTpeZgqjg",
+  "general_category": "Nightlife \u0026 Entertainment",
+  "num_reviews": "302"
+}, {
+  "state": "IN",
+  "rank_num": "3",
+  "business_id": "Ih6_y2nnbg2Jw9Qdc876GA",
+  "general_category": "Restaurants \u0026 Food",
+  "num_reviews": "219"
+}, {
+  "state": "LA",
+  "rank_num": "1",
+  "business_id": "iSRTaT9WngzB8JJ2YKJUig",
+  "general_category": "Restaurants \u0026 Food",
+  "num_reviews": "1031"
+}, {
+  "state": "LA",
+  "rank_num": "2",
+  "business_id": "6a4gLLFSgr-Q6CZXDLzBGQ",
+  "general_category": "Restaurants \u0026 Food",
+  "num_reviews": "872"
+}, {
+  "state": "LA",
+  "rank_num": "3",
+  "business_id": "VaO-VW3e1kARkU9bP1E7Fw",
+  "general_category": "Restaurants \u0026 Food",
+  "num_reviews": "711"
+}, {
+  "state": "MI",
+  "rank_num": "1",
+  "business_id": "9gU9waGZhzOOpUy78O_YBQ",
+  "general_category": "Professional \u0026 Local Services",
+  "num_reviews": "4"
+}, {
+  "state": "MO",
+  "rank_num": "1",
+  "business_id": "R8t9g5nvi7VFyS8zsgmj8Q",
+  "general_category": "Professional \u0026 Local Services",
+  "num_reviews": "337"
+}, {
+  "state": "MO",
+  "rank_num": "2",
+  "business_id": "YPTYOQO8Lg9BtHsRwYBY7g",
+  "general_category": "Restaurants \u0026 Food",
+  "num_reviews": "212"
+}, {
+  "state": "MO",
+  "rank_num": "3",
+  "business_id": "FryXEasH74MQDnj5Bvz3QA",
+  "general_category": "Home Services \u0026 Real Estate",
+  "num_reviews": "206"
+}, {
+  "state": "MT",
+  "rank_num": "1",
+  "business_id": "gCF0QQWzI9lDouhLfTbYCA",
+  "general_category": "Restaurants \u0026 Food",
+  "num_reviews": "3"
+}, {
+  "state": "NC",
+  "rank_num": "1",
+  "business_id": "em474WuTw7-OkhPfX4EohA",
+  "general_category": "Restaurants \u0026 Food",
+  "num_reviews": "2"
+}, {
+  "state": "NJ",
+  "rank_num": "1",
+  "business_id": "-pyobEWdpZ6jUp42f3I2xw",
+  "general_category": "Restaurants \u0026 Food",
+  "num_reviews": "149"
+}, {
+  "state": "NJ",
+  "rank_num": "2",
+  "business_id": "UQMUtySn2q9cSObiw5UVsw",
+  "general_category": "Professional \u0026 Local Services",
+  "num_reviews": "112"
+}, {
+  "state": "NJ",
+  "rank_num": "3",
+  "business_id": "i76ERS3jM111T3VMbi2yrQ",
+  "general_category": "Home Services \u0026 Real Estate",
+  "num_reviews": "103"
+}, {
+  "state": "NV",
+  "rank_num": "1",
+  "business_id": "wz8ZPfySQczcPgSyd33-HQ",
+  "general_category": "Nightlife \u0026 Entertainment",
+  "num_reviews": "598"
+}, {
+  "state": "NV",
+  "rank_num": "2",
+  "business_id": "ve_-rPlEGPClytyJtY55Vw",
+  "general_category": "Home Services \u0026 Real Estate",
+  "num_reviews": "350"
+}, {
+  "state": "NV",
+  "rank_num": "3",
+  "business_id": "PY9GRfzr4nTZeINf346QOw",
+  "general_category": "Home Services \u0026 Real Estate",
+  "num_reviews": "246"
+}, {
+  "state": "PA",
+  "rank_num": "1",
+  "business_id": "6ajnOk0GcY9xbb5Ocaw8Gw",
+  "general_category": "Restaurants \u0026 Food",
+  "num_reviews": "569"
+}, {
+  "state": "PA",
+  "rank_num": "2",
+  "business_id": "8pqdJjefYq-a9IBSJJmKwA",
+  "general_category": "Restaurants \u0026 Food",
+  "num_reviews": "487"
+}, {
+  "state": "PA",
+  "rank_num": "3",
+  "business_id": "kZ1q0K13tFYG_ZJrVvsJHA",
+  "general_category": "Restaurants \u0026 Food",
+  "num_reviews": "375"
+}, {
+  "state": "SD",
+  "rank_num": "1",
+  "business_id": "RXW3WsOBAkspYaJ96GRQUg",
+  "general_category": "Beauty \u0026 Wellness",
+  "num_reviews": "2"
+}, {
+  "state": "TN",
+  "rank_num": "1",
+  "business_id": "GXFMD0Z4jEVZBCsbPf4CTQ",
+  "general_category": "Restaurants \u0026 Food",
+  "num_reviews": "1093"
+}, {
+  "state": "TN",
+  "rank_num": "2",
+  "business_id": "OWOOc0YjU_kioLeEgo5VCA",
+  "general_category": "Home Services \u0026 Real Estate",
+  "num_reviews": "324"
+}, {
+  "state": "TN",
+  "rank_num": "3",
+  "business_id": "2OXCAbz3x_MrQSYj1zarIA",
+  "general_category": "Nightlife \u0026 Entertainment",
+  "num_reviews": "319"
+}, {
+  "state": "TX",
+  "rank_num": "1",
+  "business_id": "oTRrNy5VIaTw7MKEvxZl7A",
+  "general_category": "Home Services \u0026 Real Estate",
+  "num_reviews": "2"
+}, {
+  "state": "TX",
+  "rank_num": "2",
+  "business_id": "kEjAs-w4dN9W1n6jE7Tivg",
+  "general_category": "Home Services \u0026 Real Estate",
+  "num_reviews": "1"
+}, {
+  "state": "UT",
+  "rank_num": "1",
+  "business_id": "f-S2Y0OO00cQjo8yj3upKg",
+  "general_category": "Active Life \u0026 Recreation",
+  "num_reviews": "4"
+}, {
+  "state": "WA",
+  "rank_num": "1",
+  "business_id": "qbh_Xg-wfgk_qINdyApMag",
+  "general_category": "Automotive",
+  "num_reviews": "1"
+}]
