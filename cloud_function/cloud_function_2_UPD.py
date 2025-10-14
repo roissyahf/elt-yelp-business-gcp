@@ -21,12 +21,12 @@ def transform_data(request):
     MERGE `{project_id}.{target_dataset_id}.{target_table_id}` AS target
     USING (
         SELECT DISTINCT
-            review_id,
-            user_id,
-            business_id,
-            stars,
-            text,
-            date
+            CAST(review_id AS STRING) AS review_id,
+            CAST(user_id AS STRING) AS user_id,
+            CAST(business_id AS STRING) AS business_id,
+            CAST(stars AS FLOAT64) AS stars,
+            CAST(text AS STRING) AS text,
+            CAST(date AS TIMESTAMP) AS date
         FROM `{project_id}.{staging_dataset_id}.{staging_table_id}`
         WHERE 
             LENGTH(TRIM(text)) > 0 

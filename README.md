@@ -1,4 +1,4 @@
-# **End-to-end Data Analysis Yelp Business Review Project**
+# **End-to-end Data Analytics Yelp Business Review Project**
 
 This project is **inspired by** end-to-end analytics case studies built by [Ankit Bansal’s (Snowflake + AWS walkthrough)](https://youtu.be/oXLxbk5USFg?si=deFq-iMz8bOqDE9z) using the [Yelp Open Dataset](https://business.yelp.com/data/resources/open-dataset/) but reimagined entirely on Google Cloud Platform (GCP). **The objective** is to: _Design and implement a simple yet extensible ELT pipeline that ingests raw review data into Cloud Storage and maps it into BigQuery. From there, I can do downstream tasks such as sentiment analysis, theme extraction (via Vertex AI), and dashboarding._
 
@@ -150,7 +150,7 @@ Before commencing downstream tasks, a preliminary data exploration was conducted
 | Business Count per Category | Market sizing and coverage by category | 
 | Popular Categories (by Reviews) | Customer engagement and demand proxy per category | 
 |  % of 5-Star Reviews per Business |  Quality signal and competitive benchmarking | 
-|  Top 5 Most-Reviewed Businesses by State |  Identifying local popularity and state-level leaders | 
+|  Top 3 Most-Reviewed Businesses by State |  Identifying local popularity and state-level leaders | 
 |  Avg. Rating for High-Volume Businesses |  Stable performance view, filtering out noise from low review counts | 
 
 ---
@@ -237,4 +237,4 @@ Enforce strict schema validation (e.g., data types, naming) in the Cloud Functio
 
 Developed by **Roissyah Fernanda**. Some parts of the implementation and documentation were assisted by AI tools (e.g., for code refactoring, formatting, and technical writing support), while all project ideas, integration, and decision-making were independently developed by the author.
 
-Your input is valued! If you spot a bug or want to suggest an improvement, please submit a pull request. Let's collaborate to make this end-to-end Data Analysis project even better!
+Your input is valued! If you spot a bug or want to suggest an improvement, please submit a pull request. Let's collaborate to make this end-to-end Data Analytics project even better!
